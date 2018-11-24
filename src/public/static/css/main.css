@@ -1,0 +1,57 @@
+body{
+   font-family:  Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   margin: 0 5px 0 10px;
+   /* background: #F0F0F0;  */
+   background: #EEEEEE; 
+}
+
+ol {
+    margin-left:0;
+    padding-left:0;
+    counter-reset:item
+}
+
+ol>li {
+     margin-left:0; 
+     padding-left:0; 
+     margin-bottom: 0.5em;
+     counter-increment:item; 
+     list-style:none inside
+}
+
+ol>li:before {
+    content:"(" counter(item) ")"; 
+    font-weight: bold;
+    padding-right:0.5em
+}
+
+.title {
+    clear: both;
+    color: #b31b1b;
+    font-size: 24px;
+}
+
+.subtitle {
+    clear: both;
+    color: #b31b1b;
+    font-size: 16px;
+}
+
+.extra {
+    font-size: 14px;
+}
+.hed {
+    margin-top: 1em;
+    padding-top: 1em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.center{
+    width: 600px;
+    display: block;
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
